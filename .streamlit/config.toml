@@ -1,0 +1,7 @@
+[ui]
+# 隐藏顶部 Streamlit 工具栏（含 Deploy 按钮和菜单）
+hide_top_bar = true
+
+[browser]
+# 关闭匿名使用统计
+gatherUsageStats = false

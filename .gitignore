@@ -14,8 +14,9 @@ demo/*.pdf
 # 保留 sample_paper.txt 作为开箱即用的演示样例
 !demo/sample_paper.txt
 
-# Streamlit
-.streamlit/
+# Streamlit（保留项目级 config.toml，忽略本地缓存）
+.streamlit/*.cache
+.streamlit/secrets.toml
 
 # OS
 .DS_Store
