@@ -1,11 +1,28 @@
-"""paperden：本地论文 RAG 小工具（Streamlit 界面）。"""
+"""paperden：本地论文 RAG 小工具（Streamlit 界面）。
+
+运行方式：streamlit run app.py
+"""
 from __future__ import annotations
 
 import streamlit as st
 
 from rag import ingest, llm, retrieve
 
+# ---------- 页面基础配置 ----------
 st.set_page_config(page_title="paperden", page_icon="📚", layout="wide")
+
+# 隐藏 Streamlit 自带的 Deploy 按钮、右上角菜单和页脚，让页面更像独立产品
+st.markdown(
+    """
+    <style>
+    .stAppDeployButton {display: none;}   /* 隐藏右上角 Deploy 按钮 */
+    #MainMenu {visibility: hidden;}       /* 隐藏右上角汉堡菜单 */
+    footer {visibility: hidden;}          /* 隐藏底部 Streamlit 标识 */
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.title("📚 paperden")
 st.caption("本地论文检索问答 · 向量库 + Ollama · 论文不出本机")
 
