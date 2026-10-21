@@ -1,4 +1,4 @@
-# paper-rag-lite
+# paperden
 
 > 一个**极简、可本地跑通**的论文 RAG（检索增强生成）小工具。
 > 上传 PDF / TXT 论文 → 本地向量库检索 → 本地大模型回答。
@@ -22,7 +22,7 @@
 ## 📁 项目结构
 
 ```
-paper-rag-lite/
+paperden/
 ├── app.py              # Streamlit 主界面
 ├── requirements.txt
 ├── rag/

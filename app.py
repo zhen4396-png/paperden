@@ -1,12 +1,12 @@
-"""paper-rag-lite：本地论文 RAG 小工具（Streamlit 界面）。"""
+"""paperden：本地论文 RAG 小工具（Streamlit 界面）。"""
 from __future__ import annotations
 
 import streamlit as st
 
 from rag import ingest, llm, retrieve
 
-st.set_page_config(page_title="paper-rag-lite", page_icon="📚", layout="wide")
-st.title("📚 paper-rag-lite")
+st.set_page_config(page_title="paperden", page_icon="📚", layout="wide")
+st.title("📚 paperden")
 st.caption("本地论文检索问答 · 向量库 + Ollama · 论文不出本机")
 
 # ---------- 侧边栏：入库 ----------
