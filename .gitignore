@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ChromaDB 本地向量库（不入库，用户自己生成）
+data/chroma/
+
+# 用户自己放的论文
+data/papers/
+demo/*.pdf
+# 保留 sample_paper.txt 作为开箱即用的演示样例
+!demo/sample_paper.txt
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
